@@ -1,0 +1,1 @@
+INSERT INTO `espcms_calling` VALUES('2','50','en','1','0','Authorized Consulting','&lt;a target=&quot;_blank&quot; href=&quot;http://wpa.qq.com/msgrd?v=3&amp;uin=6326420&amp;site=qq&amp;menu=yes&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://wpa.qq.com/pa?p=2:6326420:41&quot; alt=&quot;点击这里给我发消息&quot; title=&quot;点击这里给我发消息&quot;&gt;&lt;/a&gt;','1314721945','1');

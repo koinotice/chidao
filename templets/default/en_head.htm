@@ -1,0 +1,127 @@
+<!-- ==================== S top ==================== -->
+    <header class="top header-v1 desktops-section default-top"><!-- top-bar --><!-- top-bar --><!-- S top-main -->
+      <div class="top-main">
+        <div class="page-width clearfix">
+          <div class="logo" skinobjectzone="HtmlLogo_399"><a href="/"><img src="/skin/img/ed08cbca-58da-4aca-9481-ab45dc9059d6_0_60.png" alt="{dede:global.cfg_webname/}" /></a></div>
+          <!-- end of logo -->
+          <div class="top-main-content clearfix"><!-- S nav -->
+            <nav class="nav">
+              <div class="main-nav clearfix" skinobjectzone="menu_468">
+                <ul class="sf-menu">
+                  <li class="{dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='current' ":@me="";{/dede:field}"><a class="first-level" href="/" target=""><strong>Home</strong></a><i></i></li>
+                  {dede:channelartlist typeid='24,28,32,33,37,39,44,0' currentstyle='current'}
+                <li class="{dede:field.currentstyle/}"><a class="first-level" href="{dede:field name='typeurl'/}" target=""><strong>{dede:field name='typename'/}</strong></a><i></i>
+                  <ul class="">
+                    {dede:sql sql='Select * from `dede_arctype` where reid=~id~ ORDER BY id'}
+                    <li class=""><a class="" href="[field:typedir function="cn_substr(@me,200,9) " /]" target=""><strong>[field:typename/]</strong></a></li>
+                    {/dede:sql}
+                  </ul>
+                </li>
+                {/dede:channelartlist}
+                </ul>
+              </div>
+            </nav>
+            <!-- E nav--></div>
+          <!-- S language -->
+          <div class="language" skinobjectzone="HtmlLanguage_1279">
+            <ul class="sf-menu">
+              <li><a href="javascript:;" class="first-level"><span><em>中文简体</em></span></a>
+                <ul>
+                  <li><a href="/en"><span><em>English</em></span></a></li>
+                  <li><a href="/"><span><em>中文简体</em></span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- E language --></div>
+      </div>
+      <!-- E top-main -->
+      <div class="clear"></div>
+    </header>
+    <!-- S touch-top-wrapper -->
+    <div class="touch-top mobile-section clearfix">
+      <div class="touch-top-wrapper clearfix">
+        <div class="touch-logo" skinobjectzone="HtmlLogo_1488"><a class="" href="/"><img src="/skin/img/ed08cbca-58da-4aca-9481-ab45dc9059d6_0_60.png" alt="{dede:global.cfg_webname/}" /></a></div>
+        <!-- S touch-navigation -->
+        <div class="touch-navigation">
+          <div class="touch-toggle">
+            <ul>
+              <li class="touch-toggle-item-first"><a href="javascript:;" class="drawer-language" data-drawer="drawer-section-language"><i class="touch-icon-language"></i><span>语言</span></a></li>
+              <li class="touch-toggle-item-last"><a href="javascript:;" class="drawer-menu" data-drawer="drawer-section-menu"><i class="touch-icon-menu"></i><span>导航</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- E touch-navigation --></div>
+      <!-- S touch-top -->
+      <div class="touch-toggle-content touch-top-home">
+        <div class="drawer-section drawer-section-language">
+          <ul class="touch-language clearfix" skinobjectzone="HtmlLanguage_1761">
+            <li><a href="/en">English</a></li>
+            <li><a href="/">中文简体</a></li>
+          </ul>
+        </div>
+        <div class="drawer-section drawer-section-menu">
+          <div class="touch-menu" skinobjectzone="menu_1979">
+            <ul>
+              <li><a href="/"><span>Home</span></a></li>
+              {dede:channelartlist typeid='24,28,0'}
+              <li><a href="javascript:;"><span>{dede:field name='typename'/}</span><i class="touch-arrow-down"></i></a>
+                <ul>
+                  {dede:channel type='son' noself='yes' }
+                  <li><a href="[field:typelink/]"><span>[field:typename/]</span></a></li>
+                  {/dede:channel}
+                </ul>
+              </li>
+              {/dede:channelartlist}
+              {dede:channelartlist typeid='32,0' }
+              <li><a href="{dede:field name='typeurl'/}"><span>{dede:field name='typename'/}</span></a></li>
+              {/dede:channelartlist}
+              {dede:channelartlist typeid='33,37,39,0'}
+              <li><a href="javascript:;"><span>{dede:field name='typename'/}</span><i class="touch-arrow-down"></i></a>
+                <ul>
+                  {dede:channel type='son' noself='yes' }
+                  <li><a href="[field:typelink/]"><span>[field:typename/]</span></a></li>
+                  {/dede:channel}
+                </ul>
+              </li>
+              {/dede:channelartlist}
+               {dede:channelartlist typeid='44,0' }
+              <li><a href="{dede:field name='typeurl'/}"><span>{dede:field name='typename'/}</span></a></li>
+              {/dede:channelartlist}
+            </ul>
+          </div>
+        </div>
+        <script type="text/javascript">
+    $(document).ready(function(){
+     
+     $(".touch-toggle a").click(function(event){
+      var className = $(this).attr("data-drawer");
+      
+      if( $("."+className).css('display') == 'none' ){      
+       $("."+className).slideDown().siblings(".drawer-section").slideUp();
+      }else{
+       $(".drawer-section").slideUp(); 
+      }
+      event.stopPropagation();
+     });
+     
+     /*$(document).click(function(){
+      $(".drawer-section").slideUp();     
+     })*/
+     
+     $('.touch-menu a').click(function(){     
+      if( $(this).next().is('ul') ){
+       if( $(this).next('ul').css('display') == 'none' ){
+        $(this).next('ul').slideDown();
+        $(this).find('i').attr("class","touch-arrow-up");     
+       }else{
+        $(this).next('ul').slideUp();
+        $(this).next('ul').find('ul').slideUp();
+        $(this).find('i').attr("class","touch-arrow-down");
+       }   
+      }
+     });
+    });
+</script></div>
+      <!-- E touch-top --></div>
+    <!-- E touch-top-wrapper --><!-- ==================== E top ==================== -->

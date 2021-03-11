@@ -1,0 +1,1 @@
+INSERT INTO `espcms_skin` VALUES('1','默认风格','default','1','1','0');

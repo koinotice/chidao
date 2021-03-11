@@ -1,0 +1,3 @@
+INSERT INTO `espcms_advert_type` VALUES('2','cn','首页友情链接','','0','0','1','0','0','','','');
+INSERT INTO `espcms_advert_type` VALUES('4','en','首页友情文字链接','','0','0','1','0','0','','','');
+INSERT INTO `espcms_advert_type` VALUES('5','cn','本站关键词','','0','0','1','0','0','','','');

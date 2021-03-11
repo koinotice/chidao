@@ -1,0 +1,16 @@
+<section class="full-page-title-wrap clearfix" skinobjectzone="menu_2613">
+        <h2>{dede:field name='typeid' function="GetTopTypename(@me) /}</h2>
+        <em class="full-page-title-line"></em></section>
+      <!-- S page-menu -->
+      <section class="full-page-menu" skinobjectzone="menu_2698">
+        <div class="full-page-menu-content">
+          <div class="page-width">
+            <ul class="clearfix">
+            {dede:channel   type ='son' currentstyle="<li class='current'><a href='~typelink~' >~typename~</a></li>"}
+              <li class=""><a href="[field:typelink/]">[field:typename/]</a></li>
+            {/dede:channel}
+            </ul>
+            <!-- 没有子菜单时输出 --></div>
+        </div>
+      </section>
+      <!-- S page-menu -->

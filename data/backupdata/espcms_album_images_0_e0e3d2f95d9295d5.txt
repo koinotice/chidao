@@ -1,0 +1,1 @@
+INSERT INTO `espcms_album_images` VALUES('5','50','cn','产品列表','','','1374379565','1','0');

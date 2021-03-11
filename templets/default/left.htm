@@ -1,0 +1,32 @@
+<section class="sidebar float-left">
+          <div id="a1portalSkin_sidebarAreaA" class="sidebar-content"><!-- Start_Module_109946 --><a name="31972" id="31972"></a>
+            <div class="module module-hlbg">
+              <div class="module-inner">
+                <div class="module-hlbg-title clearfix">
+                  <h3 class="" style="">{dede:field name='typeid' function="GetTopTypename(@me) /}</h3>
+                </div>
+                <div id="a1portalSkin_ctr109946109946_mainArea" class="module-hlbg-content"><!-- Start_Module_109946 --><!-- S product-category -->
+                  <div class="category category-109946 product-category">
+                    <ul>
+                    {dede:channel   type ='son' currentstyle="<li class='current'><a href='~typelink~' >~typename~</a></li>"}
+                      <li class=""><a href="[field:typelink/]">[field:typename/]</a></li>
+                     {/dede:channel}
+                    </ul>
+                  </div>
+                  <script type="text/javascript">
+ $(document).ready(function(){
+  $('.category-109946 ul').find('li:last').addClass('last');
+  
+  $('.category-109946 > ul > li > a, .category-109946 > ul > li > i').click(function(){
+   if( $(this).parent('li').find('ul') ){
+    $(this).parent('li').find('ul').slideDown('fast');
+    $(this).parent('li').siblings('li').find('ul').slideUp('fast');
+    $(this).parent('li').addClass('current').siblings('li').removeClass('current');
+   }
+  });   
+ });
+</script><!-- E product-category --><!-- End_Module_109946 --></div>
+              </div>
+            </div>
+          </div>
+        </section>

@@ -1,0 +1,1 @@
+<div class="module-full-screen-more"><a href="[field:typeurl /]" target="_blank">View More News ></a></div>

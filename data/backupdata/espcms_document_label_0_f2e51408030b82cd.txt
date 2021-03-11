@@ -1,0 +1,2 @@
+INSERT INTO `espcms_document_label` VALUES('1','cn','1','图片新闻推荐');
+INSERT INTO `espcms_document_label` VALUES('2','cn','3','产品推荐');

@@ -1,0 +1,1 @@
+<li><a href="[field:imgsrc/]"><img src="[field:imgsrc/]" width="85" height="85" data-large-src="[field:imgsrc/]" alt="[field:text/]" /></a></li>

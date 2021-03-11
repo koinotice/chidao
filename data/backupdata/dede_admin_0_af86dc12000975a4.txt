@@ -1,0 +1,1 @@
+INSERT INTO `dede_admin` VALUES('1','10','admin','b1a2b2a3cedecb6ebf9a','赤道供应链','赤道','cs01@chidaosc.com','','1555033762','120.229.24.124');

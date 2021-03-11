@@ -1,0 +1,6 @@
+INSERT INTO `dede_flink` VALUES('12','6','https://m.kuaidi100.com/','快递查询','','','','1553349912','1','2');
+INSERT INTO `dede_flink` VALUES('9','3','https://www.tnt.com/express/zh_cn/site/home.html','TNT快递查询','','','','1227772717','1','2');
+INSERT INTO `dede_flink` VALUES('8','2','https://www.fedex.com/en-us/home.html','fedex国际快递查询','','','','1227772703','1','2');
+INSERT INTO `dede_flink` VALUES('10','1','https://www.ups.com/cn/zh/Home.page?loc=zh_CN','ups快递查询','','','','1477895082','1','2');
+INSERT INTO `dede_flink` VALUES('11','1','https://www.logistics.dhl/cn-zh/home/tracking.html','dhl国际快递查询','','','','1477895093','1','2');
+INSERT INTO `dede_flink` VALUES('13','5','https://www.17track.net/zh-cn','全球物流查询平台','','','','1553351236','1','2');

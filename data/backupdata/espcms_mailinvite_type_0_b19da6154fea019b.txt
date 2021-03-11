@@ -1,0 +1,2 @@
+INSERT INTO `espcms_mailinvite_type` VALUES('1','cn','产品订阅','','0','1','1314715229');
+INSERT INTO `espcms_mailinvite_type` VALUES('2','en','英文订阅管理','','0','1','1314717891');
